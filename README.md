@@ -48,13 +48,13 @@ cd $HOME && git clone https://github.com/ZakariaRasoli/Venus.git && cd Venus && 
 
 # Developers!
 
-##[ZakariaR](https://github.com/ZakariaRasoli) ([Telegram](https://telegram.me/ZakariaR))
+## [ZakariaR](https://github.com/ZakariaRasoli) ([Telegram](https://telegram.me/ZakariaR))
 
 
 ## Our Telegram channel:
 
-##[@VenusOfficial](https://telegram.me/VenusOfficial)
+## [@VenusOfficial](https://telegram.me/VenusOfficial)
 
 ## Thanks To 
 
-##[BeyondTeam](https://telegram.me/BeyondTeam)
+## [BeyondTeam](https://telegram.me/BeyondTeam)
