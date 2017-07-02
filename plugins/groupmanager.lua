@@ -938,17 +938,17 @@ end
 local lock_arabic = data[tostring(target)]["settings"]["lock_arabic"] 
 if lock_arabic == "yes" then
 if not lang then
- return "🔐 *Arabic\Persian* _Posting Is Already Locked_"
+ return "🔐 *Arabic/Persian* _Posting Is Already Locked_"
 elseif lang then
- return "🔐 ارسال کلمات عربی\فارسی در گروه هم اکنون ممنوع است"
+ return "🔐 ارسال کلمات عربی/فارسی در گروه هم اکنون ممنوع است"
 end
 else
 data[tostring(target)]["settings"]["lock_arabic"] = "yes"
 save_data(_config.moderation.data, data) 
 if not lang then
- return "🔐 *Arabic\Persian* _Posting Has Been Locked_\n-----------{By}------------- \n*• User ID :* `"..msg.from.id.."`\n*• Username :* @"..check_markdown(msg.from.username or "Not Username")..""
+ return "🔐 *Arabic/Persian* _Posting Has Been Locked_\n-----------{By}------------- \n*• User ID :* `"..msg.from.id.."`\n*• Username :* @"..check_markdown(msg.from.username or "Not Username")..""
 else
- return "🔐ارسال کلمات عربی\فارسی در گروه ممنوع شد\n------------{توسط}---------\n_• شناسه کاربر :_ `"..msg.from.id.."`\n_• یوزرنیم کاربر :_ @"..chech_markdown(msg.from.username or "یوزر نیم ندارد")..""
+ return "🔐ارسال کلمات عربی/فارسی در گروه ممنوع شد\n------------{توسط}---------\n_• شناسه کاربر :_ `"..msg.from.id.."`\n_• یوزرنیم کاربر :_ @"..chech_markdown(msg.from.username or "یوزر نیم ندارد")..""
 end
 end
 end
@@ -967,16 +967,16 @@ end
 local lock_arabic = data[tostring(target)]["settings"]["lock_arabic"]
  if lock_arabic == "no" then
 if not lang then
-return "🔓 *Arabic\Persian* _Posting Is Not Locked_" 
+return "🔓 *Arabic/Persian* _Posting Is Not Locked_" 
 elseif lang then
-return "🔓 ارسال کلمات عربی\فارسی در گروه ممنوع نمیباشد"
+return "🔓 ارسال کلمات عربی/فارسی در گروه ممنوع نمیباشد"
 end
 else 
 data[tostring(target)]["settings"]["lock_arabic"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
-return "🔓 *Arabic\Persian* _Posting Has Been Unlocked_\n-----------{By}------------- \n*• User ID :* `"..msg.from.id.."`\n*• Username :* @"..check_markdown(msg.from.username or "Not Username")..""
+return "🔓 *Arabic/Persian* _Posting Has Been Unlocked_\n-----------{By}------------- \n*• User ID :* `"..msg.from.id.."`\n*• Username :* @"..check_markdown(msg.from.username or "Not Username")..""
 else
-return "🔓 ارسال کلمات عربی\فارسی در گروه آزاد شد\n------------{توسط}---------\n_• شناسه کاربر :_ `"..msg.from.id.."`\n_• یوزرنیم کاربر :_ @"..chech_markdown(msg.from.username or "یوزر نیم ندارد")..""
+return "🔓 ارسال کلمات عربی/فارسی در گروه آزاد شد\n------------{توسط}---------\n_• شناسه کاربر :_ `"..msg.from.id.."`\n_• یوزرنیم کاربر :_ @"..chech_markdown(msg.from.username or "یوزر نیم ندارد")..""
 end
 end
 end
